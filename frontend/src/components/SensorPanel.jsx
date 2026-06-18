@@ -11,7 +11,7 @@ function SensorPanel(){
 	
 		const fetchSensor = async () => {
 			try {
-				const res = await fetch('http://10.1.1.151:3001/sensor')
+				const res = await fetch('http://10.1.1.162:3001/sensor')
 				if (!res.ok) throw new Error ('Error del servidor')
 				const json = await res.json()
 				setData(json)
